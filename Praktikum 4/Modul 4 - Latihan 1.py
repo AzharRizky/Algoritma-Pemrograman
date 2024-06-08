@@ -10,7 +10,6 @@
 # Versi 1
 a = int(input("masukkan jumlah maksimal: "))
 for i in range(a, 0, -1):
-    print(i)
     for j in range(0, i):
         print(i, end='')
     print()
@@ -22,3 +21,11 @@ for i in range(-1, a):
         print(a , end='')
     a -= 1
     print('')
+    
+# Versi 3
+a = int(input("masukkan jumlah maksimal: "))
+for i in range(a, 0, -1):
+    angka = ''
+    for j in range(0, i):
+        angka += f'{i}'
+    print(angka)
